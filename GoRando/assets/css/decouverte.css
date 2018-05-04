@@ -1,0 +1,182 @@
+.navbar-custom {
+    border: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.navbar-custom .navbar-nav li {
+    margin: 0;
+}
+.navbar-custom .navbar-nav > li > a {
+    color: #1b6d85;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+}
+.navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-custom .navbar-nav > .active > a {
+    border-color: rgba(255,255, 255, 0.9);
+}
+
+.navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    margin-top: 2px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #1b6d85;
+}
+
+
+
+
+.navbar-solid {
+    background-color: #000 !important;
+    padding: 0 !important;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.site-branding {
+    float: left;
+    margin-top: 0;
+    margin-left: 10px;
+}
+.site-branding .logo {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.site-branding .logo:focus, .site-branding .logo:hover {
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: black;
+        padding-top: 0px;
+    }
+.site-header {
+    width: 100%;
+    height: 30%;
+    min-height: 30vh;
+    position: relative;
+    text-align: center;
+    background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+    display: table;
+}
+.site-header::before {
+    content: "";
+    position: absolute;
+
+}
+.site-header .intro {
+    color: white;
+    position: relative;
+    text-align: center;
+
+    padding-left: 30%;
+    padding-right: 30%;
+    z-index: 1;
+    padding: 0 15px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 30vh;
+}
+#schedule {
+    padding: 100px;
+}
+
+
+    .overlay {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.5s ease;
+    }
+
+    .schedule-box:hover .overlay {
+        display: block;
+        background: rgba(0, 0, 0, .3);
+    }
+
+    .im {
+      top: 0px;
+        width: 345px;
+        height: 230px;
+        left: 0;
+        margin-top: -40px;
+    }
+
+    .title {
+        position: absolute;
+        width: 500px;
+        right: 0px;
+        top: 120px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        z-index: 1;
+        transition: top .5s ease;
+    }
+
+    .schedule-box:hover .title {
+        top: 90px;
+    }
+
+    .button {
+        position: absolute;
+        width: 500px;
+        left:0;
+        top: 180px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity .35s ease;
+    }
+
+    .button a {
+        width: 200px;
+        right: 0px;
+        padding: 12px 48px;
+        text-align: center;
+        color: white;
+        border: solid 2px white;
+        z-index: 1;
+    }
+
+    .schedule-box:hover .button {
+        opacity: 1;
+    }
+
+}
+
+
+    .schedule-box {
+        position: relative;
+        color: #fff;
+        text-align: center;
+        height: 250px;
+
+
+    }
+    .schedule-box::before {
+        content: '';
+        position: absolute;
+
+        border: 1px solid #fff;
+        background-color: rgba(0,0,0,0.2);
+    }
